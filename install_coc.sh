@@ -22,6 +22,9 @@ install_camodocal(){
 
     echo "Installing SuiteSparse -------------------------------"
     sudo apt-get install -y libsuitesparse-dev
+
+    echo "Installing Gtest ------------------------------------"
+    sudo apt-get install -y libgtest-dev
 }
 
 # MAIN
