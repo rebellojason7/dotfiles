@@ -4,8 +4,7 @@ set -e # exit on first error
 
 install_dependencies(){
 	sudo apt-get update
-	sudo apt-get install vim \
-		xbacklight
+	sudo apt-get install -y vim 
 }
 
 git_config(){
