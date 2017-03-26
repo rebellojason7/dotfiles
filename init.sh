@@ -4,7 +4,10 @@ set -e # exit on first error
 
 install_dependencies(){
 	sudo apt-get update
-	sudo apt-get install -y vim 
+	sudo apt-get install -y \ 
+	    vim \
+	    cmake
+
 }
 
 git_config(){
