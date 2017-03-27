@@ -13,6 +13,12 @@ install_ros(){
     echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
     source ~/.bashrc
     sudo apt-get install -y python-rosinstall
+
+    echo "Installing Catkin Tools -----------------------------"
+    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
+    wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get install python-catkin-tools
 }
 
 # MAIN
