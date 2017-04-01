@@ -52,3 +52,6 @@ install_camodocal(){
 
 # MAIN
 install_camodocal
+
+# Installing OpenCV
+# cmake -DWITH_CUDA=ON -DBUILD_EXAMPLES=ON -DWITH_CUBLAS=ON -DWITH_NVCUVID=ON -DOPENCV_EXTRA_MODULES_PATH=/home/jrebello/projects/opencv_contrib/modules -DWITH_TBB=ON -DBUILD_PYTHON_SUPPORT=ON -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=/usr/local ..
